@@ -66,21 +66,12 @@ np.random.seed(0)
 
 ```python
 def calculate_z_score_from_data(data, value):
-    pop_mean = np.mean(data)
-    pop_std = np.std(data)
-    
-    z_score = (value - pop_mean) / pop_std
-    
-    return z_score
+    pass
 
 test1 = np.random.normal(5, 3, 10)
 print(calculate_z_score_from_data(test1, 5)) # -0.7631465574632231
 print(calculate_z_score_from_data(test1, 1)) # -2.14186850501324
 ```
-
-    -0.7631465574632231
-    -2.14186850501324
-    
 
 ### Calculating Z-score with Mean and Standard Deviation Values
 
@@ -91,15 +82,11 @@ In the cell below, write a function that takes in arguments for mean, standard d
 
 ```python
 def calculate_z_score_from_values(mean, std, value):
-    return (value - mean) / std
+    pass
 
 print(calculate_z_score_from_values(5, 1, 4)) # -1
 print(calculate_z_score_from_values(5, 1, 6.5)) # 1.5
 ```
-
-    -1.0
-    1.5
-    
 
 ### Normal vs. Standard Normal Distribution
 
@@ -114,34 +101,10 @@ In the cell below, write a function that takes in an array of normally distribut
 
 ```python
 def normalize(data):
-    mean_val = np.mean(data)
-    std_val = np.std(data)
-    normalized_data = []
-    
-    for i in data:
-        normalized_val = (i - mean_val) / std_val
-        normalized_data.append(normalized_val)
-    
-    return normalized_data
+    pass
 
 normalize(test1) 
 ```
-
-
-
-
-    [1.0609567070463128,
-     -0.34936741322854586,
-     0.24890909722735877,
-     1.5540299194277436,
-     1.1679858345433962,
-     -1.7736924038437911,
-     0.21928425755347297,
-     -0.9196561862131748,
-     -0.869879129739741,
-     -0.338570682773029]
-
-
 
 **_Expected Output:_**
 ```[-1.2266644368964434,
@@ -179,15 +142,12 @@ The mean height of adult men is 5'10", with a standard deviation of four inches.
 
 
 ```python
-men_mean = 70 # inches
-men_std = 4 # inches
-percent_shorter = scipy.stats.norm.cdf(73, men_mean, men_std)
+men_mean = None  # inches
+men_std = None # inches
+percent_shorter = None
 
-print("{:.4}% of adult males are 6'1\" or shorter".format(percent_shorter * 100))
+print("{:.4}% of adult males are 6'1\" or shorter".format(percent_shorter * 100)) # answer: 77.34%
 ```
-
-    77.34% of adult males are 6'1" or shorter
-    
 
 #### Practice Problem 2: Survival Function
 
@@ -199,15 +159,12 @@ The mean height for women is 5'4", with a standard deviation of 3.5 inches.  Wha
 
 
 ```python
-women_mean = 64
-women_std = 3.5
-percent_taller = scipy.stats.norm.sf(68, women_mean, women_std)
+women_mean = None
+women_std = None
+percent_taller = None
 
-print("{:.4}% of adult feamles are 5'8\" or taller".format(percent_taller * 100))
+print("{:.4}% of adult females are 5'8\" or taller".format(percent_taller * 100)) # answer: 12.65%
 ```
-
-    12.65% of adult feamles are 5'8" or taller
-    
 
 #### Practice Problem 3: Probability Mass of a Range of Values
 
@@ -219,15 +176,12 @@ The mean IQ is 100, with a standard deviation of 15.  Using the functions you le
 
 
 ```python
-lower_bound = scipy.stats.norm.cdf(80, 100, 15)
-upper_bound = scipy.stats.norm.cdf(120, 100, 15)
-probability_mass = upper_bound - lower_bound
+lower_bound = None
+upper_bound = None
+probability_mass = None
 
-print("{:.4}% of people have an IQ between 80 and 120".format(probability_mass * 100))
+print("{:.4}% of people have an IQ between 80 and 120".format(probability_mass * 100)) # answer: 81.76%
 ```
-
-    81.76% of people have an IQ between 80 and 120
-    
 
 ### Conclusion
 

@@ -80,7 +80,7 @@ print(calculate_z_score_from_data(test1, 1)) # -2.14186850501324
 
     -0.7631465574632231
     -2.14186850501324
-    
+
 
 ### Calculating Z-score with Mean and Standard Deviation Values
 
@@ -99,7 +99,7 @@ print(calculate_z_score_from_values(5, 1, 6.5)) # 1.5
 
     -1.0
     1.5
-    
+
 
 ### Normal vs. Standard Normal Distribution
 
@@ -187,7 +187,7 @@ print("{:.4}% of adult males are 6'1\" or shorter".format(percent_shorter * 100)
 ```
 
     77.34% of adult males are 6'1" or shorter
-    
+
 
 #### Practice Problem 2: Survival Function
 
@@ -203,11 +203,11 @@ women_mean = 64
 women_std = 3.5
 percent_taller = scipy.stats.norm.sf(68, women_mean, women_std)
 
-print("{:.4}% of adult feamles are 5'8\" or taller".format(percent_taller * 100))
+print("{:.4}% of adult females are 5'8\" or taller".format(percent_taller * 100))
 ```
 
-    12.65% of adult feamles are 5'8" or taller
-    
+    12.65% of adult females are 5'8" or taller
+
 
 #### Practice Problem 3: Probability Mass of a Range of Values
 
@@ -227,7 +227,7 @@ print("{:.4}% of people have an IQ between 80 and 120".format(probability_mass *
 ```
 
     81.76% of people have an IQ between 80 and 120
-    
+
 
 ### Conclusion
 
